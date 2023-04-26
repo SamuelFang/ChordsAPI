@@ -64,7 +64,7 @@ example: https://localhost:7163/api/fingering/G
 ```yaml
 {
     "statusCode": 400,
-    "statusDescription": "OK: chord and its corresponding fingering was successfully added",
+    "statusDescription": "BadRequest: chord name already exists. Please use another chord name.",
     "chords": [],
     "fingerings": []
 }
