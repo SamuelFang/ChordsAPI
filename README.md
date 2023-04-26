@@ -2,7 +2,7 @@
 
 A Chord / Guitar Fingering API with the following endpoints:
 
-## HTTP GET REQUESTS:
+## GET REQUESTS:
 
 api/chord - retrieves all chords
 
@@ -25,9 +25,12 @@ example: /fingering/G
 
 api/fingering/random - retrieves a random fingering
 
-## HTTP POST REQUESTS:
+## POST REQUESTS:
 
 api/chord - post a chord
 
 
-api/fingering - post a fingering
+## DELETE REQUESTS:
+
+api/chord - post a chord
+
