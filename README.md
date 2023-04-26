@@ -2,7 +2,7 @@
 
 A Chord / Guitar Fingering API with the following endpoints:
 
-#HTTP GET REQUESTS:
+# HTTP GET REQUESTS:
 api/chord - retrieves all chords
 
 api/chord/{chord name} - retrieves requested chord
