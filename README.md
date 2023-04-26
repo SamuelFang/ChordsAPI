@@ -20,10 +20,22 @@ example: https://localhost:7163/api/fingering/G
 
 ### Sample Response Body:
 ```yaml
-{"statusCode":200,
-"statusDescription":"OK: A was found.",
-"chords":[{"chordId":1,"chordName":"A","notes":"A,C#,E","chordRoot":"A","chordType":"Major","chordBass":"A","fingeringId":1,"fingering":null}],
-"fingerings":[]
+{
+    "statusCode": 200,
+    "statusDescription": "OK: A was found.",
+    "chords": [
+        {
+            "chordId": 1,
+            "chordName": "A",
+            "notes": "A,C#,E",
+            "chordRoot": "A",
+            "chordType": "Major",
+            "chordBass": "A",
+            "fingeringId": 1,
+            "fingering": null
+        }
+    ],
+    "fingerings": []
 }
 ```
 
@@ -34,16 +46,16 @@ example: https://localhost:7163/api/fingering/G
 ### Sample Request Body:
 ```yaml
 {
-    "chordName" : "A7",
-    "notes" : "A,C#,E,G",
-    "chordRoot" : "A",
-    "chordType" : "7",
-    "chordBass" : "A",
-    "fingering":{
-        "chordName" : "A7",
-        "stringPositions" : "X02020",
-        "fingering" : "XX2X3X",
-        "difficulty" : "Easy"
+    "chordName": "A7",
+    "notes": "A,C#,E,G",
+    "chordRoot": "A",
+    "chordType": "7",
+    "chordBass": "A",
+    "fingering": {
+        "chordName": "A7",
+        "stringPositions": "X02020",
+        "fingering": "XX2X3X",
+        "difficulty": "Easy"
     }
 }
 ```
