@@ -20,8 +20,10 @@ example: https://localhost:7163/api/fingering/G
 
 ### Sample Response Body:
 ```yaml
-{
-   {"statusCode":200,"statusDescription":"OK: A was found.","chords":[{"chordId":1,"chordName":"A","notes":"A,C#,E","chordRoot":"A","chordType":"Major","chordBass":"A","fingeringId":1,"fingering":null}],"fingerings":[]}
+{"statusCode":200,
+"statusDescription":"OK: A was found.",
+"chords":[{"chordId":1,"chordName":"A","notes":"A,C#,E","chordRoot":"A","chordType":"Major","chordBass":"A","fingeringId":1,"fingering":null}],
+"fingerings":[]
 }
 
 ## Post Requests:
