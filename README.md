@@ -25,7 +25,7 @@ example: https://localhost:7163/api/fingering/G
 "chords":[{"chordId":1,"chordName":"A","notes":"A,C#,E","chordRoot":"A","chordType":"Major","chordBass":"A","fingeringId":1,"fingering":null}],
 "fingerings":[]
 }
-'''
+```
 
 ## Post Requests:
 
@@ -46,7 +46,7 @@ example: https://localhost:7163/api/fingering/G
         "difficulty" : "Easy"
     }
 }
-'''
+```
 
 ### Sample Response Body:
 ```yaml
@@ -56,7 +56,7 @@ example: https://localhost:7163/api/fingering/G
     "chords": [],
     "fingerings": []
 }
-'''
+```
 
 ## Delete Requests:
 
@@ -71,5 +71,5 @@ example: https://localhost:7163/api/chord/F
     "chords": [],
     "fingerings": []
 }
-'''
+```
 
