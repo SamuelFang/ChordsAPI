@@ -25,12 +25,51 @@ example: https://localhost:7163/api/fingering/G
 "chords":[{"chordId":1,"chordName":"A","notes":"A,C#,E","chordRoot":"A","chordType":"Major","chordBass":"A","fingeringId":1,"fingering":null}],
 "fingerings":[]
 }
+'''
 
 ## Post Requests:
 
 ### https://localhost:7163/api/chord - post a chord
 
+### Sample Request Body:
+```yaml
+{
+    "chordName" : "A7",
+    "notes" : "A,C#,E,G",
+    "chordRoot" : "A",
+    "chordType" : "7",
+    "chordBass" : "A",
+    "fingering":{
+        "chordName" : "A7",
+        "stringPositions" : "X02020",
+        "fingering" : "XX2X3X",
+        "difficulty" : "Easy"
+    }
+}
+'''
+
+### Sample Response Body:
+```yaml
+{
+    "statusCode": 400,
+    "statusDescription": "OK: chord and its corresponding fingering was successfully added",
+    "chords": [],
+    "fingerings": []
+}
+'''
+
 ## Delete Requests:
 
-### https://localhost:7163/api/chord - post a chord
+### https://localhost:7163/api/chord/{chordname} - deletes requested chord
+example: https://localhost:7163/api/chord/F
+
+### Sample Response Body:
+```yaml
+{
+    "statusCode": 200,
+    "statusDescription": "OK: F chord and its corresponding fingering was successfully removed",
+    "chords": [],
+    "fingerings": []
+}
+'''
 
