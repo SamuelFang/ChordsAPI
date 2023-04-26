@@ -1,12 +1,18 @@
 # ChordsAPI
 
-An Chord / Guitar Fingering API with the following endpoints:
+A Chord / Guitar Fingering API with the following endpoints:
 
-/chord - retrieves all chords
+#HTTP GET REQUESTS:
+api/chord - retrieves all chords
 
-/chord/{chord name} - retrieves requested chord
+api/chord/{chord name} - retrieves requested chord
 example: /chord/Am
 
-/fingering - retrieves all fingerings
-/fingering/{chord name} - retriees requested fingering
+api/chord/random - retrieves a random chord
+
+api/fingering - retrieves all fingerings
+
+api/fingering/{chord name} - retrieves requested fingering
 example: /fingering/G
+
+api/fingering/random - retrieves a random fingering
